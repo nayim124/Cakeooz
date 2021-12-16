@@ -9,13 +9,6 @@
 <?php
 include "header.html";
 ?>
-<div class="cakebutton">
-  <div class="card">
-  <a href="signup.php"><img src="images/vancake.jpg" alt="Vanilla BBC Delight" style="width:42px;height:42px;"></a>
-  <div class="container">
-    <h4><b>Vanilla Berry Delight</b></h4>
-    <p>£24.99</p>
-  </div>
-</div>
+old menu
 </body>
 </html>
