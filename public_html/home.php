@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +25,7 @@
 			<div class="wrapper">
 				<p><?php
 				session_start();
-                if(isset($_SESSION["FirstName"])) {
+                if(isset($_SESSION["Customer_ID"])) {
 					?>
                     Welcome <?php echo $_SESSION["FirstName"]; ?>.
 					<?php

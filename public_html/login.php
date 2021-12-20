@@ -47,6 +47,8 @@ header("Location:home.php");
   <br><br>
   Forgot your password? <a href="forgot-password.php">Recover</a>
   <br><br>
+  Admin? <a href="adminlogin.php">Log In</a>
+  <br><br>
   <input type="reset">
   <input type="submit" name="Submit" value="Log In">
   </form>
