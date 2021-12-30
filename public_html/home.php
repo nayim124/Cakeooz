@@ -27,12 +27,13 @@
 				session_start();
                 if(isset($_SESSION["Customer_ID"])) {
 					?>
-                    Welcome <?php echo $_SESSION["FirstName"]; ?>.
+                    	Welcome <?php echo $_SESSION["FirstName"]; ?>.
 					<?php
-                    }else echo 'You currently are not logged in, please <a href="login.php">Log In</a>';
+                }
+				else echo 'You currently are not logged in, please <a href="login.php">Log In</a>';
 					?></p>
                     </div>
-                    </div>
-                    </div>
-                    </body>
-                    </html>
+            </div>
+        </div>
+    </body>
+</html>
