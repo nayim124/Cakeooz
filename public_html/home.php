@@ -34,6 +34,13 @@
 					?></p>
 					<div class="cards">
 						<div class="card" id="black-forest"><img src="./menuImages/RegularDelights/black-forest.png" alt="black-forest"/></div>
+						<div class="card" id="creme-delight"><img src="./menuImages/RegularDelights/creme-delight.png" alt="creme-delight"/></div>
+						<div class="card" id="crescent-delight"><img src="./menuImages/RegularDelights/crescent-delight.png" alt="crescent-delight"/></div>
+						<div class="card" id="crown-delight"><img src="./menuImages/RegularDelights/crown-delight.png" alt="crown-delight"/></div>
+						<div class="card" id="crown-ooz"><img src="./menuImages/RegularDelights/crown-ooz.png" alt="crown-ooz"/></div>
+						<div class="card" id="eskimo-ooz"><img src="./menuImages/RegularDelights/black-forest.png" alt="eskimo-ooz"/></div>
+						<div class="card" id="floral-delight"><img src="./menuImages/RegularDelights/floral-delight.png" alt="floral-delight"/></div>
+						<div class="card" id="white-lady"><img src="./menuImages/RegularDelights/white-lady.png" alt="white-lady"/></div>
 					</div>
                     </div>
             </div>
