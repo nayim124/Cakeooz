@@ -32,6 +32,9 @@
                 }
 				else echo 'You currently are not logged in, please <a href="login.php">Log In</a>';
 					?></p>
+					<div class="cards">
+						<div class="card" id="black-forest"><img src="./menuImages/RegularDelights/black-forest.png" alt="black-forest"/></div>
+					</div>
                     </div>
             </div>
         </div>
