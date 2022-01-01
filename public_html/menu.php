@@ -9,6 +9,16 @@
 <?php
 include "header.html";
 ?>
-old menu
+<div class="cards">
+						<figure  id="black-forest"><img src="./menuImages/RegularDelights/black-forest.png" class="card-img" alt="black-forest"/></figure>
+						<figure  id="creme-delight"><img src="./menuImages/RegularDelights/creme-delight.png" class="card-img" alt="creme-delight"/></figure>
+						<figure  id="crescent-delight"><img src="./menuImages/RegularDelights/crescent-delight.png" class="card-img" alt="crescent-delight"/></figure>
+						<figure  id="crown-delight"><img src="./menuImages/RegularDelights/crown-delight.png" class="card-img" alt="crown-delight"/></figure>
+						<figure  id="crown-ooz"><img src="./menuImages/RegularDelights/crown-ooz.png" class="card-img" alt="crown-ooz"/></figure>
+						<figure  id="eskimo-ooz"><img src="./menuImages/RegularDelights/black-forest.png" class="card-img" alt="eskimo-ooz"/></figure>
+						<figure  id="floral-delight"><img src="./menuImages/RegularDelights/floral-delight.png" class="card-img" alt="floral-delight"/></figure>
+						<figure  id="white-lady"><img src="./menuImages/RegularDelights/white-lady.png" class="card-img" alt="white-lady"/></figure>
+					</div>
+                    </div>
 </body>
 </html>

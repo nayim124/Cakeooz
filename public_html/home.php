@@ -7,17 +7,9 @@
 	<link href="index.css" rel="stylesheet">
 </head>
 <body>
-	<div class="box-area">
-		<header>
-			<div class="wrapper">
-				<div class="logo">
-					<a href="home.php">CAKEOOZ</a>
-				</div>
-				<nav>
-					<a href="home.php">Home</a> <a href="#menu">Menu</a> <a href="cart.php">Cart</a> <a href="logout.php">Logout</a>
-				</nav>
-			</div>
-		</header>
+<?php
+include "afterheader.php";
+?>
 		<div class="banner-area">
 			<h2>CAKEOOZ</h2>
 		</div>
@@ -32,7 +24,6 @@
                 }
 				else echo 'You currently are not logged in, please <a href="login.php">Log In</a>';
 					?></p>
-					<div class="cards">
 						<figure  id="black-forest"><img src="./menuImages/RegularDelights/black-forest.png" class="card-img" alt="black-forest"/></figure>
 						<figure  id="creme-delight"><img src="./menuImages/RegularDelights/creme-delight.png" class="card-img" alt="creme-delight"/></figure>
 						<figure  id="crescent-delight"><img src="./menuImages/RegularDelights/crescent-delight.png" class="card-img" alt="crescent-delight"/></figure>
@@ -42,7 +33,6 @@
 						<figure  id="floral-delight"><img src="./menuImages/RegularDelights/floral-delight.png" class="card-img" alt="floral-delight"/></figure>
 						<figure  id="white-lady"><img src="./menuImages/RegularDelights/white-lady.png" class="card-img" alt="white-lady"/></figure>
 					</div>
-                    </div>
             </div>
         </div>
     </body>
