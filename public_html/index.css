@@ -9,6 +9,7 @@ body {
 	width: 1170px;
 	margin: 0 auto;
 	color: #fff;
+	background-color: red;
 }
 header {
 	height: 100px;
@@ -63,12 +64,11 @@ nav a {
 	width: 100%;
 	position: relative;
 	top: 450px;
-	background: rgb(66, 66, 66);
+	background: rgb(0, 0, 255);
 	height: 1500px;
-	display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .content-area h2 {
 	font-family: poppins;
@@ -84,14 +84,27 @@ nav a {
 }
 
 .card-img {
-	float: left;
-  width: 33.33%;
-  padding: 5px;
+	float: center;
+  	width: 50%;
+  	padding: 5px;
+	background-color: red;
+	margin: auto;
 }
 
-.cards::after {
+.content-area > div {
 	content: "";
 	clear: both;
-	display: table;
+	background-color: red;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-img img{
+	display: block;
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	margin: auto;
 }
  
