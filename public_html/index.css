@@ -62,9 +62,8 @@ nav a {
 }
 .content-area {
 	width: 100%;
-	position: relative;
 	top: 450px;
-	background: rgb(0, 0, 255);
+	background-color: rgb(0, 0, 255);
 	height: 1500px;
 	display: flex !important;;
 	align-items: center !important;;
