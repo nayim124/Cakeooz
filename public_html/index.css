@@ -84,27 +84,27 @@ nav a {
 }
 
 .card-img {
-	float: center;
-  	width: 50%;
-  	padding: 5px;
-	background-color: red;
-	margin: auto;
+	float: center !important;;
+  	width: 50% !important;;
+  	padding: 5px !important;;
+	background-color: red !important;
+	margin: auto !important;;
 }
 
 .content-area > div {
 	content: "";
 	clear: both;
-	background-color: red;
-	display: grid;
-	align-items: center;
-	justify-content: center;
+	background-color: red !important;;
+	display: grid !important;;
+	align-items: center !important;;
+	justify-content: center !important;;
 }
 
 .card-img img{
-	display: block;
-	width: 100%;
-	max-width: 500px;
-	height: auto;
-	margin: auto;
+	display: block !important;;
+	width: 100% !important;;
+	max-width: 500px !important;;
+	height: auto !important;;
+	margin: auto !important;;
 }
  
