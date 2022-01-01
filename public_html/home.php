@@ -24,15 +24,17 @@ include "afterheader.php";
                 }
 				else echo 'You currently are not logged in, please <a href="login.php">Log In</a>';
 					?></p>
-						<figure  id="black-forest"><img src="./menuImages/RegularDelights/black-forest.png" class="card-img" alt="black-forest"/></figure>
-						<figure  id="creme-delight"><img src="./menuImages/RegularDelights/creme-delight.png" class="card-img" alt="creme-delight"/></figure>
-						<figure  id="crescent-delight"><img src="./menuImages/RegularDelights/crescent-delight.png" class="card-img" alt="crescent-delight"/></figure>
-						<figure  id="crown-delight"><img src="./menuImages/RegularDelights/crown-delight.png" class="card-img" alt="crown-delight"/></figure>
-						<figure  id="crown-ooz"><img src="./menuImages/RegularDelights/crown-ooz.png" class="card-img" alt="crown-ooz"/></figure>
-						<figure  id="eskimo-ooz"><img src="./menuImages/RegularDelights/black-forest.png" class="card-img" alt="eskimo-ooz"/></figure>
-						<figure  id="floral-delight"><img src="./menuImages/RegularDelights/floral-delight.png" class="card-img" alt="floral-delight"/></figure>
-						<figure  id="white-lady"><img src="./menuImages/RegularDelights/white-lady.png" class="card-img" alt="white-lady"/></figure>
+					<div class="cards">
+						<div class="card-img" ><img src="./menuImages/RegularDelights/black-forest.png"  id="black-forest" alt="black-forest"/></div>
+						<div  class="card-img"><img src="./menuImages/RegularDelights/creme-delight.png"  id="creme-delight" alt="creme-delight"/></div>
+						<div class="card-img" ><img src="./menuImages/RegularDelights/crescent-delight.png"  id="crescent-delight" alt="crescent-delight"/></div>
+						<div class="card-img" ><img src="./menuImages/RegularDelights/crown-delight.png"  id="crown-delight" alt="crown-delight"/></div>
+						<div class="card-img" ><img src="./menuImages/RegularDelights/crown-ooz.png"  id="crown-ooz" alt="crown-ooz"/></div>
+						<div class="card-img" ><img src="./menuImages/RegularDelights/black-forest.png"  id="eskimo-ooz" alt="eskimo-ooz"/></div>
+						<div class="card-img" ><img src="./menuImages/RegularDelights/floral-delight.png"  id="floral-delight" alt="floral-delight"/></div>
+						<div class="card-img" ><img src="./menuImages/RegularDelights/white-lady.png" id="white-lady" alt="white-lady"/></div>
 					</div>
+			 </div>
             </div>
         </div>
     </body>
