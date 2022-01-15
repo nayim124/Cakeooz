@@ -31,9 +31,8 @@ if(isset($_POST["Submit"])){
 
 <body>
 
-<form method="POST" style="border:1px solid #ccc">
+<form method="POST">
   <div class="container">
-    <hr>
     <br>
 	<label for="firstname"><b>First Name</b></label>
     <input type="text" placeholder="Enter Your First Name" name="FirstName" required>

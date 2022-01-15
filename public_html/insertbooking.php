@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost","s2001758","s2001758@lsc","s2001758");
+$conn = mysqli_connect("localhost","root","","Cakeooz");
 if (!$conn) {
 	die('<div class="center">Connection failed: ' . mysqli_connect_error() . "</div>");
 }

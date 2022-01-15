@@ -2,23 +2,55 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link href="menu.css" rel="stylesheet">
-<title>Menu</title>
+<link href="login.css" rel="stylesheet">
+<title>Log In</title>
 </head>
 <?php
-include "header.html";
+session_start();
+$message="";
+include 'header.html';
+if(count($_POST)>0) {
+include 'connection.php';
+$result = mysqli_query($conn,"SELECT * FROM Customer WHERE Email='" . $_POST["Email"] . "' and Password = '". $_POST["Password"]."'");
+$row = mysqli_fetch_array($result);
+if(is_array($row)) {
+$_SESSION["Customer_ID"] = $row['Customer_ID'];
+$_SESSION["FirstName"] = $row['FirstName'];
+}
+else
+{
+$message = "Invalid Email or Password!";
+}
+}
+if(isset($_SESSION["Customer_ID"])) {
+header("Location:home.php");
+}
 ?>
-<div class="cards">
-						<figure  id="black-forest"><img src="./menuImages/RegularDelights/black-forest.png" class="card-img" alt="black-forest"/></figure>
-						<figure  id="creme-delight"><img src="./menuImages/RegularDelights/creme-delight.png" class="card-img" alt="creme-delight"/></figure>
-						<figure  id="crescent-delight"><img src="./menuImages/RegularDelights/crescent-delight.png" class="card-img" alt="crescent-delight"/></figure>
-						<figure  id="crown-delight"><img src="./menuImages/RegularDelights/crown-delight.png" class="card-img" alt="crown-delight"/></figure>
-						<figure  id="crown-ooz"><img src="./menuImages/RegularDelights/crown-ooz.png" class="card-img" alt="crown-ooz"/></figure>
-						<figure  id="eskimo-ooz"><img src="./menuImages/RegularDelights/black-forest.png" class="card-img" alt="eskimo-ooz"/></figure>
-						<figure  id="floral-delight"><img src="./menuImages/RegularDelights/floral-delight.png" class="card-img" alt="floral-delight"/></figure>
-						<figure  id="white-lady"><img src="./menuImages/RegularDelights/white-lady.png" class="card-img" alt="white-lady"/></figure>
-					</div>
-                    </div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Log In</title>
+</head>
+
+<body>
+<form name"frmUser" method="post" action="" align="center">
+<div class="message"><?php if($message!="") { echo $message; } ?></div>
+<h3 align="center">Please log in to assess the menu</h3>
+  Email:<br>
+  <input type="text" name="Email">
+  <br>
+  Password:<br>
+  <input type="Password" name="Password">
+  <br><br>
+  Don't have an account? <a href="signup.php">Sign up</a>
+  <br><br>
+  Forgot your password? <a href="forgot-password.php">Recover</a>
+  <br><br>
+  Admin? <a href="adminlogin.php">Log In</a>
+  <br><br>
+  <input type="reset">
+  <input type="submit" name="Submit" value="Log In">
+  </form>
 </body>
 </html>

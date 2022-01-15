@@ -4,17 +4,17 @@
 <link rel="stylesheet" type="text/css" href="index.css">
 	<div class="box-area">
 		<header>
-			<div class="wrapper">
+			
 				<div class="logo">
 					<a href="home.php">CAKEOOZ</a>
 				</div>
 				<nav>
 					<a href="home.php">Home</a> 
-                    <a href="menu.php">Menu</a> 
+                    <a href="#menu">Menu</a> 
                     <a href="cart.php">Cart</a> 
                     <a href="logout.php">Logout</a>
 				</nav>
-			</div>
+			
 		</header>
         </div>
 
