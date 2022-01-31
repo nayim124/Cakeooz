@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="index.css">
 	<div class="box-area">
 		<header>
-			<div class="wrapper">
+
 				<div class="logo">
 					<a href="adminhome.php">CAKEOOZ</a>
 				</div>
@@ -14,9 +14,9 @@
                     <a href="reports.php">Reports</a> 
                     <a href="adminlogout.php">Logout</a>
 				</nav>
-			</div>
+				
 		</header>
-        </div>
+	</div>
 
 </html>
 <br/><br/><br/><br/><br/><br/>

@@ -9,14 +9,14 @@
 <body>
 	<div class="box-area">
 		<header>
-			<div class="wrapper">
+
 				<div class="logo">
 					<a href="adminhome.php">CAKEOOZ</a>
 				</div>
 				<nav>
 					<a href="adminhome.php">Home</a> <a href="orders.php">Orders</a> <a href="reports.php">Reports</a> <a href="adminlogout.php">Logout</a>
 				</nav>
-			</div>
+
 		</header>
 		<div class="banner-area">
 			<h2>CAKEOOZ</h2>

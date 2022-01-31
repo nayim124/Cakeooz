@@ -35,6 +35,29 @@
 		.button{
 			opacity:0;
 		}
+		.btn {
+			padding: 1em 2.1em 1.1em;
+			border-radius: 50em !important
+			margin: 8px 8px 8px 8px;
+			color: white;
+			display: inline-block;
+			-webkit-transtion: 0.3s;
+			-moz-transition: 0.3s;
+			-o-transition: 0.3s;
+			font-weight: 900;
+			font-family: sans-serif;
+			font-size: .80em;
+			text-transform: uppercase;
+			text-align: center;
+			position: center;
+			justify-content: center;
+			-webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+			-moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+			box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+		}
+		.btn:hover {
+			opacity: 0.75;
+		}
 		.card-img:hover .button{
 			float:right;
 			opacity: 1;
@@ -68,6 +91,10 @@
 			padding: 15px;
 			border-radius: 4px;
 		}
+		
+		.green {
+			background-color: #90EE90;
+		}
 	</style>
 </head>
 <body>
@@ -78,6 +105,9 @@ include "connection.php";
 		<div class="banner-area">
 			<h2><?php
 				session_start();
+				if(!isset($_SESSION['Customer_ID'])){
+					header("Location:index.html");
+				}
                 if(isset($_SESSION["Customer_ID"])) {
 					?>
                     	Welcome <?php echo $_SESSION["FirstName"]; ?>
@@ -106,16 +136,86 @@ include "connection.php";
 						<br />
 						<p>Royal Delights</p>
 						<div class="royal-delights">
-							<div class="card-img" ><img src="./menuImages/RoyalDelights/baby-shower-delight.png" id="baby-shower-delight" alt="baby-shower-delight"/><a href="cart.php/?id=baby-shower-delight" class="button">Buy</a></div>
-							<div class="card-img"><img src="./menuImages/RoyalDelights/castle-delight.png" id="castle-delight" alt="castle-delight"/><a href="cart.php/?id=castle-delight" class="button">Buy</a></div>
-							<div class="card-img" ><img src="./menuImages/RoyalDelights/choco-ooz.png" id="choco-ooz" alt="choco-ooz"/><a href="cart.php/?id=choco-ooz" class="button">Buy</a></div>
-							<div class="card-img" ><img src="./menuImages/RoyalDelights/choco-truffle-trouble.png" id="choco-truffle-trouble" alt="choco-truffle-trouble"/><a href="cart.php/?id=choco-truffle-trouble" class="button">Buy</a></div>
-							<div class="card-img" ><img src="./menuImages/RoyalDelights/double-delight.png" id="double-delight" alt="double-delight"/><a href="cart.php/?id=double-delight" class="button">Buy</a></div>
-							<div class="card-img" ><img src="./menuImages/RoyalDelights/minion-ooz.png" id="minion-ooz" alt="minion-ooz"/><a href="cart.php/?id=minion-ooz" class="button">Buy</a></div>
-							<div class="card-img" ><img src="./menuImages/RoyalDelights/princess-delight.png" id="princess-delight" alt="princess-delight"/><a href="cart.php/?id=princess-delight" class="button">Buy</a></div>
-							<div class="card-img" ><img src="./menuImages/RoyalDelights/santa-delight.png" id="santa-delight" alt="santa-delight"/><a href="cart.php?id=<?php echo "santa-delight"?>" class="button">Buy</a></div>
-							<button onClick="scrollTop()" id="Top">⇧</button>
-						</div>
+							<div class="card-img" >
+								<img src="./menuImages/RoyalDelights/baby-shower-delight.png" id="baby-shower-delight" alt="baby-shower-delight"/>
+								<form action="info.php/?id=<?php echo 'baby-shower-delight'; ?>" method="POST">
+									<input type="submit" class="button btn green" value="Find out more"/>
+								</form>
+								<form action="order.php">
+									<input type="submit" class="button btn green" value="order"/>
+								</form>
+							</div>
+							<div class="card-img">
+								<img src="./menuImages/RoyalDelights/castle-delight.png" id="castle-delight" alt="castle-delight"/>
+								<form action="info.php/?id=<?php echo 'castle-delight'; ?>" method="POST">
+									<input type="submit" class="button btn green" value="Find out more"/>
+								</form>
+								<form action="order.php">
+									<input type="submit" class="button btn green" value="Order"/>
+								</form>
+							</div>
+							<div class="card-img" >
+								<img src="./menuImages/RoyalDelights/choco-ooz.png" id="choco-ooz" alt="choco-ooz"/>
+								<form action="info.php/?id=<?php echo 'choco-ooz'; ?>" method="POST">
+									<input type="submit" class="button btn green" value="Find out more"/>
+								</form>
+								<form action="order.php">
+									<input type="submit" class="button btn green" value="Order"/>
+								</form>
+							</div>
+							<div class="card-img" >
+								<img src="./menuImages/RoyalDelights/choco-truffle-trouble.png" id="choco-truffle-trouble" alt="choco-truffle-trouble"/>
+								<form action="info.php/?id=<?php echo 'choco-truffle-trouble'; ?>" method="POST">
+									<input type="submit" class="button btn green" value="Find out more"/>
+								</form>
+								<form action="order.php">
+									<input type="submit" class="button btn green" value="Order"/>
+								</form>
+							</div>
+							<div class="card-img" >
+								<img src="./menuImages/RoyalDelights/double-delight.png" id="double-delight" alt="double-delight"/>
+								<form action="info.php/?id=<?php echo 'double-delight'; ?>" method="POST">
+									<input type="submit"  class="button btn green" value="Find out more"/>
+								</form>
+								<form action="order.php">
+									<input type="submit" class="button btn green" value="Order"/>
+								</form>
+							</div>
+							<div class="card-img" >
+								<img src="./menuImages/RoyalDelights/minion-ooz.png" id="minion-ooz" alt="minion-ooz"/>
+								<form action="info.php/?id=<?php echo 'minion-ooz'; ?>" method="POST">
+									<input type="submit" class="button btn green" value="Find out more"/>
+								</form>
+								<form action="order.php">
+									<input type="submit" class="button btn green" value="Order"/>
+								</form>
+							</div>
+							<div class="card-img" >
+								<img src="./menuImages/RoyalDelights/princess-delight.png" id="princess-delight" alt="princess-delight"/>
+								<form action="info.php/?id=<?php echo 'princess-delight'; ?>" method="POST">
+									<input type="submit" class="button btn green" value="Find out more"/>
+								</form>
+								<form action="savedItems.php/?id=<?php echo 'princess-delight'?>&name=<?php echo $_SESSION["Customer_ID"] ?>" method="POST">
+									<input type="submit" class="button btn green" value="Save Item"/>
+								</form>
+								<form action="order.php">
+									<input type="submit" class="button btn green" value="Order"/>
+								</form>
+							</div>
+							<div class="card-img" >
+								<img src="./menuImages/RoyalDelights/santa-delight.png" id="santa-delight" alt="santa-delight"/>
+								<form action="info.php/?id=<?php echo 'santa-delight'; ?>" method="POST">
+									<input type="submit" class="button btn green" value="Find out more"/>
+								</form>
+								<form action="savedItems.php/?id=<?php echo 'santa-delight'?>&name=<?php echo $_SESSION["Customer_ID"] ?>" method="POST">
+									<input type="submit" class="button btn green" value="Save Item"/>
+								</form>
+								<form action="order.php">
+									<input type="submit" class="button btn green" value="Order"/>
+								</form>
+
+							</div>
+						<button onClick="scrollTop()" id="Top">⇧</button>
 					</div>
 			 </div>
             </div>
@@ -155,8 +255,7 @@ if (!empty($product_array)) {
 	}
 }
 ?>
-	<footer id="footer">
-		about
+	<footer id="footer"> 
 	</footer>
 	</body>
 </html>
