@@ -105,15 +105,14 @@ include "connection.php";
 		<div class="banner-area">
 			<h2><?php
 				session_start();
-				if(!isset($_SESSION['Customer_ID'])){
-					header("Location:index.html");
-				}
-                if(isset($_SESSION["Customer_ID"])) {
+                if(isset($_SESSION["Customer_ID"])){
 					?>
                     	Welcome <?php echo $_SESSION["FirstName"]; ?>
 					<?php
                 }
-				else echo 'You currently are not logged in, please <a href="login.php">Log In</a>';
+				elseif(!isset($_SESSION['Customer_ID'])){
+					header("Location:index.php");
+				}
 					?></h2>
 		</div>
 		<div class="content-area">

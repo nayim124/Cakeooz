@@ -4,17 +4,15 @@
 <link rel="stylesheet" type="text/css" href="index.css">
 	<div class="box-area">
 		<header>
-			<div class="wrapper">
 				<div class="logo">
-					<a href="index.html">CAKEOOZ</a>
+					<a href="index.php">CAKEOOZ</a>
 				</div>
 				<nav>
-					<a href="index.html">Home</a> 
+					<a href="index.php">Home</a> 
                     <a href="menu.php">Menu</a> 
                     <a href="signup.php">Sign Up</a> 
                     <a href="login.php">Log In</a>
 				</nav>
-			</div>
 		</header>
         </div>
 

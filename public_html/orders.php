@@ -12,6 +12,9 @@
         session_start();
         include "adminheader.php";
         include "connection.php";
+        if(!isset($_SESSION["Staff_ID"])) {
+        header("Location:index.php");
+        };
     ?> 
     <table>
         <caption>Information about Orders</caption>

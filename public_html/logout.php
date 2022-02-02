@@ -5,11 +5,11 @@
 <title>Logout Page</title>
 </head>
 <?php
-include 'header.html';
+include "header.php";
 session_start();
 unset($_SESSION["Customer_ID"]);
 unset($_SESSION["FirstName"]);
-header("Location:index.html");
+header("Location:index.php");
 ?>
 <body>
 </body>

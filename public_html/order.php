@@ -2,6 +2,9 @@
     session_start();
     include "afterheader.php";
     include "connection.php";
+    if(!isset($_SESSION['Customer_ID'])){
+        header("Location:index.php");
+    }
 
     if( isset($_REQUEST['Order_ID']) ){
         $Order_ID = $_REQUEST['Order_ID'];

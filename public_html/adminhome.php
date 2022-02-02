@@ -19,7 +19,7 @@
 
 		</header>
 		<div class="banner-area">
-			<h2>CAKEOOZ</h2>
+			<h2>Admin Panel</h2>
 		</div>
 		<div class="content-area">
 			<div class="wrapper">
@@ -29,7 +29,9 @@
 					?>
                     Welcome <?php echo $_SESSION["FirstName"]; ?>.
 					<?php
-                    }else echo 'You currently are not logged in, please <a href="login.php">Log In</a>';
+                    }elseif(!isset($_SESSION["Staff_ID"])) {
+						header("Location:index.php");
+						};
 					?></p>
                     </div>
                     </div>

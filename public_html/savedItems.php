@@ -10,7 +10,7 @@
 <body>
     <?php
         session_start();
-        include "adminheader.php";
+        include "afterheader.php";
         include "connection.php";
     ?>
     <?php
@@ -22,8 +22,7 @@
         $typeOfCake;
         $orderId;
         $productId;
-        $sql = "SELECT * 
-                FROM  Customer";
+        $sql = "SELECT * FROM  Customer";
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result) >  0){
             while($row = mysqli_fetch_array($result)){

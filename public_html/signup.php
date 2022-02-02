@@ -3,14 +3,14 @@
 <head>
 <link rel="stylesheet" type="text/css" href="signup.css">
 <?php
-include 'header.html';
+include "header.php";
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Sign Up</title>
 </head>
 <?php
-
 include 'connection.php';
+session_start();
 if(isset($_POST["Submit"])){
 	$firstname = $_POST["FirstName"];
 	$lastname = $_POST["LastName"];
@@ -27,6 +27,9 @@ if(isset($_POST["Submit"])){
 		echo "Success";
 		}
 	}
+if(isset($_SESSION["Customer_ID"])) {
+  header("Location:home.php");
+}
 ?>
 
 <body>

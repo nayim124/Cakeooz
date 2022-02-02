@@ -8,7 +8,7 @@
 <?php
 session_start();
 $message="";
-include 'header.html';
+include "header.php";
 if(count($_POST)>0) {
 include 'connection.php';
 $result = mysqli_query($conn,"SELECT * FROM StaffMembers WHERE IDNumber='" . $_POST["IDNumber"] . "' and Password = '". $_POST["Password"]."'");
@@ -24,7 +24,9 @@ $message = "Invalid ID Number or Password!";
 }
 if(isset($_SESSION["Staff_ID"])) {
 header("Location:adminhome.php");
-}
+}elseif(isset($_SESSION["Customer_ID"])) {
+  header("Location:index.php");
+  };
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">

@@ -9,7 +9,7 @@ include 'header.html';
 session_start();
 unset($_SESSION["Staff_ID"]);
 unset($_SESSION["FirstName"]);
-header("Location:index.html");
+header("Location:index.php");
 ?>
 <body>
 </body>

@@ -8,7 +8,7 @@
 <?php
 session_start();
 $message="";
-include 'header.html';
+include "header.php";
 if(count($_POST)>0) {
 include 'connection.php';
 $result = mysqli_query($conn,"SELECT * FROM Customer WHERE Email='" . $_POST["Email"] . "' and Password = '". $_POST["Password"]."'");
