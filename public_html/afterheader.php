@@ -2,22 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
 	<div class="box-area">
-		<header>
+		<header class="header">
 			
-				<div class="logo">
-					<a href="home.php">CAKEOOZ</a>
-				</div>
-				<nav>
-					<a href="home.php">Home</a> 
-                    <a href="#menu">Menu</a> 
-                    <a href="cart.php">Cart</a>
-					<a href="savedItems.php">Saved Orders</a>
-                    <a href="logout.php">Logout</a>
-				</nav>
-			
+			<div class="logo">
+				<a href="home.php">CAKEOOZ</a>
+			</div>
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li><a href="home.php">Home</a> </li>
+                <li><a href="#menu">Menu</a> </li>
+                <li> <a href="cart.php">Cart</a></li>
+				<li><a href="savedItems.php">Saved Orders</a></li>
+                <li> <a href="logout.php">Logout</a></li>
+			</ul>
 		</header>
-        </div>
+    </div>
 
 </html>
 <br/><br/><br/><br/><br/><br/>

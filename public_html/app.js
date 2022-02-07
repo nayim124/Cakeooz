@@ -1,7 +1,10 @@
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.navbar__menu');
+const navMenu = document.getElementById('nav-menu'),
+    toggleMenu = document.getElementById('toggle-menu'),
+    closeMenu = document.getElementById('close-menu')
 
-menu.addEventListener('click', function() {
-  menu.classList.toggle('is-active');
-  menuLinks.classList.toggle('active');
-});
+toggleMenu.addEventListener('click',() => {
+  navMenu.classList.toggle('show')
+})
+removeMenu.addEventListener('click',() => {
+  navMenu.classList.remove('show')
+})

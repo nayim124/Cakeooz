@@ -36,34 +36,30 @@ if(isset($_SESSION["Customer_ID"])) {
 
 <form method="POST">
   <div class="container">
+  <h2 align="center">Sign Up</h2>
     <br>
-	<label for="firstname"><b>First Name</b></label>
-    <input type="text" placeholder="Enter Your First Name" name="FirstName" required>
+    First Name<br>
+    <input type="text" name="FirstName" required>
+    <br>
+    Last Name<br>
+    <input type="text" name="LastName" required>
     <br><br>
-    <label for="lastname"><b>Last Name</b></label>
-    <input type="text" placeholder="Enter Your Last Name" name="LastName" required>
+    Mobile Number<br>
+    <input type="number" name="Tel" required>
+    <br>
+    Date of Birth<br>
+    <input type="date" name="DateOfBirth" required>
     <br><br>
-    <label for="tel"><b>Mobile Number</b></label>
-    <input type="number" placeholder="Enter Tel" name="Tel" required>
+    Email<br>
+    <input type="text" name="Email" required>
+    <br>
+    Password<br>
+    <input type="Password" name="Password" required>
     <br><br>
-    <label for="dob"><b>Date Of Birth</b></label>
-    <input type="date" placeholder="Enter Your Date of Birth" name="DateOfBirth" required>
-    <br><br>
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="Email" required>
-	  <br><br>
-    <label for="password"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="Password" required>
-	  <br><br>
     Already have an account? <a href="login.php">Log In</a>
     <br><br>
-    <input type="checkbox" checked="checked" name="termsbox" style="margin-bottom:15px"> I Agree
-    </label>
-
-    <p>By creating an account you agree to our <a href="terms.php" style="color:dodgerblue">Terms & Conditions</a>.</p>
 
     <div class="clearfix">
-      <input type="reset">
       <button type="submit" class="signupbtn" name="Submit">Sign Up</button>
     </div>
   </div>

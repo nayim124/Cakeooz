@@ -36,11 +36,12 @@ header("Location:home.php");
 <body>
 <form name"frmUser" method="post" action="" align="center">
 <div class="message"><?php if($message!="") { echo $message; } ?></div>
-<h3 align="center">Enter Login Details</h3>
-  Email:<br>
+<h2 align="center">Log In</h2>
+  <br>
+  Email<br>
   <input type="text" name="Email">
   <br>
-  Password:<br>
+  Password<br>
   <input type="Password" name="Password">
   <br><br>
   Don't have an account? <a href="signup.php">Sign up</a>
@@ -49,8 +50,8 @@ header("Location:home.php");
   <br><br>
   Admin? <a href="adminlogin.php">Log In</a>
   <br><br>
-  <input type="reset">
-  <input type="submit" name="Submit" value="Log In">
+  <button type="submit" class="loginbtn" name="Submit" value="Log In"></button>
+
   </form>
 </body>
 </html>

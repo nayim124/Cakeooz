@@ -28,17 +28,18 @@
 		}
 
 		.card-img:hover{
-			background: 20px #fff;
 			padding-bottom: 50px;
 		}
-
+		img {
+			border-radius: 50%;
+			background-color: rgb(66,66,66);
+		}
 		.button{
 			opacity:0;
 		}
 		.btn {
 			padding: 1em 2.1em 1.1em;
 			border-radius: 50em !important
-			margin: 8px 8px 8px 8px;
 			color: white;
 			display: inline-block;
 			-webkit-transtion: 0.3s;
@@ -67,9 +68,10 @@
 		}
 
 		.card-img img {
-			display: block;
-			width: 100%;
-			max-width: 500px
+			float: left;
+			width: 100px;
+			height: 100px;
+			object-fit: cover;
 		}
 
 		.royal-delights p {
@@ -94,6 +96,34 @@
 		
 		.green {
 			background-color: #90EE90;
+		}
+		.card-img span {
+			font-size: 2em;
+		}
+		.cake-button {
+			display: inline-block;
+			padding: 0.35rem 1.2rem;
+			border: 0.1em solid #FFFFFF;
+			margin: 0 0.3em 0.3em 0;
+			border-radius: 0.12em;
+			box-sizing: border-box;
+			text-decoration: none;
+			font-family: 'Robot', sans-serif;
+			font-weight: 300;
+			color: #FFFFFF;
+			text-align: center;
+			transition: all 0.2s;
+			
+		}
+		.cake-button:hover {
+			color: #000000;
+			background-color: #FFFFFF;
+		}
+		@media all and (max-width: 30em) {
+			.cake-button {
+				display: block;
+				margin: 0.4em auto;
+			}
 		}
 	</style>
 </head>
@@ -122,9 +152,15 @@ include "connection.php";
 						<p>Regular Delights</p>
 						<div class="regular-delights">
 							<div class="card-img"> 
-								<img src="./menuImages/RegularDelights/black-forest.png" id="black-forest" alt="black-forest"/><a href="cart.php/?id=black-forest" class="button">Buy</a>
+								<img src="./menuImages/RegularDelights/black.jpeg" id="black-forest" alt="black-forest"/>
+								<br/><span style="color:purple; text-align: center" >Black</span>&nbsp;<span style="color:green; text-align: center">Forest</span>
+								<br/><a href="cart.php/?id=black-forest" class="cake-button">Buy</a>
 							</div>
-							<div class="card-img"><img src="./menuImages/RegularDelights/creme-delight.png" id="creme-delight" alt="creme-delight"/><a href="cart.php/?id=creme-delight" class="button">Buy</a></div>
+							<div class="card-img">
+								<img src="./menuImages/RegularDelights/creme-delight.png" id="creme-delight" alt="creme-delight"/>
+								<span style="color:purple; text-align: center" >Creme</span>&nbsp;<span style="color:green; text-align: center">Delight</span>
+								<br/><a href="cart.php/?id=creme-delight" class="cake-button">Buy</a>
+							</div>
 							<div class="card-img" ><img src="./menuImages/RegularDelights/crescent-delight.png" id="crescent-delight" alt="crescent-delight"/><a href="cart.php/?id=crescent-delight" class="button">Buy</a></div>
 							<div class="card-img" ><img src="./menuImages/RegularDelights/crown-delight.png" id="crown-delight" alt="crown-delight"/><a href="cart.php/?id=crown-delight" class="button">Buy</a></div>
 							<div class="card-img" ><img src="./menuImages/RegularDelights/crown-ooz.png" id="crown-ooz" alt="crown-ooz"/><a href="cart.php/?id=crown-ooz" class="button">Buy</a></div>
