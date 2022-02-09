@@ -153,7 +153,10 @@ include "connection.php";
 						<div class="regular-delights">
 							<div class="card-img"> 
 								<img src="./menuImages/RegularDelights/black.jpeg" id="black-forest" alt="black-forest"/>
-								<br/><span style="color:purple; text-align: center" >Black</span>&nbsp;<span style="color:green; text-align: center">Forest</span>
+								
+								<form action="info.php" method="POST">
+									<input type="submit" name="baby-shower-delight" class="cake-button" value="Find out more"/>
+								</form>
 								<br/><a href="cart.php/?id=black-forest" class="cake-button">Buy</a>
 							</div>
 							<div class="card-img">
@@ -173,14 +176,14 @@ include "connection.php";
 						<div class="royal-delights">
 							<div class="card-img" >
 								<img src="./menuImages/RoyalDelights/baby-shower-delight.png" id="baby-shower-delight" alt="baby-shower-delight"/>
-								<form action="info.php/?id=<?php echo 'baby-shower-delight'; ?>" method="POST">
-									<input type="submit" class="button btn green" value="Find out more"/>
+								<form action="info.php" method="POST">
+									<input type="submit" name="baby-shower-delight" class="button btn green" value="Find out more"/>
 								</form>
 								<form action="order.php">
 									<input type="submit" class="button btn green" value="order"/>
 								</form>
 							</div>
-							<div class="card-img">
+							<!-- <div class="card-img">
 								<img src="./menuImages/RoyalDelights/castle-delight.png" id="castle-delight" alt="castle-delight"/>
 								<form action="info.php/?id=<?php echo 'castle-delight'; ?>" method="POST">
 									<input type="submit" class="button btn green" value="Find out more"/>
@@ -249,7 +252,7 @@ include "connection.php";
 									<input type="submit" class="button btn green" value="Order"/>
 								</form>
 
-							</div>
+							</div> -->
 						<button onClick="scrollTop()" id="Top">⇧</button>
 					</div>
 			 </div>

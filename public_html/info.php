@@ -93,7 +93,7 @@
         include "connection.php";
     ?>
     <?php
-        $cake = ($_GET['id']);
+        $_SESSION['name'] = ($_POST['baby-shower-delight']);
         $typeOfCake;
         $priceOfCake;
         $sql = "SELECT Description, Type, Price FROM Product";
@@ -102,16 +102,16 @@
 
         if(mysqli_num_rows($result) > 0){
             while($row = mysqli_fetch_array($result)){
-                if($row['Description'] == $cake){
+                if($row['Description'] == $_SESSION['name']){
                     $typeOfCake = $row['Type'];
                     $priceOfCake = $row['Price'];
                 };
             };
         };
     ?>
-
+    <img src="./menuImages/RoyalDelights/crown-ooz.png" id="minion-ooz" alt="minion-ooz"/>
     <table>
-        <caption>Information about <?php echo $cake ?></caption>
+        <caption>Information about <?php echo $_SESSION['name'] ?></caption>
         <thead>
             <tr>
             <th scope="col">Cake</th>
@@ -121,7 +121,7 @@
         </thead>
         <tbody>
             <tr>
-                <td data-label="Cake"><?php echo $cake ?></td>
+                <td data-label="Cake"><?php echo $_SESSION['name'] ?></td>
                 <td data-label="Type"><?php echo $typeOfCake ?></td>
                 <td data-label="Price"><?php echo $priceOfCake ?></td>
             </tr>

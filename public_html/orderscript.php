@@ -22,21 +22,27 @@
 
             $sql = "INSERT INTO Orders2(Order_ID, Product_ID, Quantity) VALUES(" .$Order_ID. ", " .$Description. ", " .$Quantity. ")";
             
-            // if(mysqli_query($conn, $sql)){
-            //     echo "<script>window.location = 'order.php?Order_ID=" .$Order_ID. "';</script>";
-            // }else{
-            //     echo "ERROR: " . mysqli_error($conn);
-            // }
-        }else{
-            echo "ERROR: " . mysqli_error($conn);
-        }
+            if(mysqli_query($conn, $sql)){
+                echo "<script>window.location = 'order.php?Order_ID=" .$Order_ID. "';</script>";
+            }
+            else{
+                 echo "ERROR: " . mysqli_error($conn);
+            }
+            else{
+                echo "ERROR: " . mysqli_error($conn);
+            }
 
     }else{
         $Order_ID = $_REQUEST['Order_ID'];
 
         $sql = "INSERT INTO Orders2(Order_ID, Product_ID, Quantity) VALUES(" .$Order_ID. ", " .$Description. ", " .$Quantity. ")";
 
-        echo $sql;
+        if(mysqli_query($conn, $sql)){
+            echo "<script>window.location = 'order.php?Order_ID=" .$Order_ID. "';</script>";
+        }
+        else{
+             echo "ERROR: " . mysqli_error($conn);
+        }
     }
 
 

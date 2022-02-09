@@ -6,18 +6,11 @@
         header("Location:index.php");
     }
 
-    if( isset($_REQUEST['Order_ID']) ){
+    if(isset($_REQUEST['Order_ID']) ){
         $Order_ID = $_REQUEST['Order_ID'];
-    }else if(isset($_REQUEST['Description']){
-        $Description = $_REQUEST['Description'];
-    }
-    else if(isset($_REQUEST['Quantity']){
-        $Quantity = $_REQUEST['Quantity'];
     }
     else{
         $Order_ID = '';
-        $Quantity = '';
-        $Description = '';
     }
 ?>
 <!DOCTYPE html>
@@ -31,7 +24,7 @@
     <body>
         <h1>Make An Order</h1>
 
-        <form method="POST" action="orderscript.php?Order_ID=<?php echo $Order_ID; ?>?Description=<?php echo $Description ?>?Quantity=<?php echo $Quantity ?>">
+        <form method="POST" action="orderscript.php?Order_ID=<?php echo $Order_ID;?> ">
             <table border="1">
                 <thead>
                     <tr>
@@ -56,7 +49,8 @@
                                     while($row = mysqli_fetch_array($result)){
                                         echo "<option value='" .$row['Product_ID']. "'>" .$row['Description']. " (".$row['Type'].")";
                                     }
-                                }else{
+                                }
+                                else{
                                     echo "<option disabled>No cake found</option>";
                                 }
                             ?>
