@@ -6,7 +6,7 @@
     position: fixed;
     width: 100%;
     z-index: 3;
-    height: 120px;
+    height: 121px;
 	width: 100%;
     color: white;
 	background-color: rgb(66,66,66);
@@ -24,22 +24,19 @@
     display: block;
     padding: 20px 20px;
     font-family: Poppins;
-	letter-spacing: 4px;
-	font-size: 15px;
+	  letter-spacing: 4px;
+	  font-size: 15px;
     text-decoration: none;
     color: white;
+    border-radius:10px;
   }
-  
-.header li a:hover,
-.header .menu-btn:hover {
-    background-color: rgb(128, 128, 119);
-}
+
   
   .header .logo {
     display: block;
     float: left;
     font-size: 2em;
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-decoration: none;
   }
   
@@ -57,7 +54,7 @@
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 28px 20px;
+    padding: 55px 30px;
     position: relative;
     user-select: none;
   }
@@ -119,7 +116,7 @@
   
   /* 48em = 768px */
   
-  @media (min-width: 48em) {
+  @media (min-width: 1046px) {
     .header li {
       float: left;
     }
@@ -138,3 +135,31 @@
     }
   }
   
+  body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul a:hover{
+  color: #FBC02D !important;
+}
+nav li{
+    text-align: center;
+    text-transform: uppercase;
+}
+li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: #FBC02D;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+li > a:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+.active{
+    color: #FBC02D !important;
+}
+
+
+

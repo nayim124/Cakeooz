@@ -1,0 +1,33 @@
+.checkout {
+    float: right;
+    border: 0;
+    padding: 6px 25px;
+    background-color: beige;
+    color: black;
+    font-size: 15px;
+    border-radius: 3px;
+    text-align: center;
+
+}
+.savedOrderCheckout {
+    border: 0;
+    padding: 6px 25px;
+    background-color: beige;
+    color: black;
+    font-size: 25px;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.salesExport {
+    float: right;
+    border: 0;
+    padding: 6px 25px;
+    background-color: beige;
+    color: black;
+    font-size: 15px;
+    border-radius: 3px;
+    text-align: center;
+
+}

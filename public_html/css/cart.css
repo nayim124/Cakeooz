@@ -1,0 +1,205 @@
+/* $font-bold:  'HelveticaNeue-Medium', 'HelveticaNeue Medium'; */
+body {
+    background-color: rgb(95,95,95);
+    font-size: 12px;
+}
+.totals {
+    background-color: #494;
+    font-size: 20px;
+}
+.cart {
+    margin-top: 5em;
+}
+.item-description {
+   float: left;
+   width: 20%;
+}
+.item-price {
+float: left;
+   width: 12%;
+}
+.item-details {
+float: left;
+   width: 37%;
+}
+.item-quantity {
+   float: left;
+   width: 10%;
+   
+}
+.item-status {
+float: left;
+   width: 9%;
+}
+.totals-item-total {
+    font-family: 'HelveticaNeue-Medium', 'HelveticaNeue Medium';
+    font-weight: bold;
+}
+.totals-item {
+        float: right;
+        clear: both;
+        width: 100%;
+        margin-bottom: 15px;
+        margin-left: 14px;
+        
+        
+}
+.totals-label {
+        float: left;
+        clear: both;
+        width: 79%;
+        text-align: right;
+        
+}
+.total-value {
+        float: right;
+        width: 18%;
+        text-align: center;
+}
+.labels {
+   padding-bottom: 15px;
+   margin-bottom: 15px;
+   border-bottom: 1px solid #aaa;
+
+}
+.item-details, .item-removeal {
+   text-indent: -9999px;
+}
+
+.product {
+   margin-bottom: 20px;
+   padding-bottom: 10px;
+   border-bottom: 1px solid #eee;
+}
+.item-description {
+   text-align: center;
+   
+}
+.img-product {
+   width: 100px;
+   
+}
+.item-title {
+    margin-right: 5px 20px 5px 0;
+    text-align: center;
+    line-height: 0.4em;
+    
+    font-family: 'HelveticaNeue-Medium', 'HelveticaNeue Medium';
+}
+.checkout {
+    float: right;
+    border: 0;
+    margin-top: 20px;
+    padding: 6px 25px;
+    background-color: #6b6;
+    color: white;
+    font-size: 25px;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 3em;
+}
+.checkout:hover {
+    background-color: beige;
+}
+
+body {
+   background-color: rgb(95,95,95);
+}
+.totals {
+   background-color: #494;
+   font-size: 20px;
+}
+.cart {
+   margin-top: 5em;
+}
+.item-description {
+float: left;
+width: 20%;
+}
+.item-price {
+float: left;
+width: 12%;
+}
+.item-details {
+float: left;
+width: 37%;
+}
+.item-quantity {
+float: left;
+width: 10%;
+
+}
+.item-status {
+float: left;
+width: 9%;
+}
+.totals-item-total {
+   font-family: 'HelveticaNeue-Medium', 'HelveticaNeue Medium';
+   font-weight: bold;
+}
+.totals-item {
+       float: right;
+       clear: both;
+       width: 100%;
+       margin-bottom: 15px;
+       margin-left: 14px;
+       
+       
+}
+.totals-label {
+       float: left;
+       clear: both;
+       width: 79%;
+       text-align: right;
+       
+}
+.total-value {
+       float: right;
+       width: 18%;
+       text-align: center;
+}
+.labels {
+padding-bottom: 15px;
+margin-bottom: 15px;
+border-bottom: 1px solid #aaa;
+
+}
+.item-details, .item-removeal {
+text-indent: -9999px;
+}
+
+.product {
+margin-bottom: 20px;
+padding-bottom: 10px;
+border-bottom: 1px solid #eee;
+}
+.item-description {
+text-align: center;
+
+}
+.img-product {
+width: 100px;
+
+}
+.item-title {
+   margin-right: 5px 20px 5px 0;
+   text-align: center;
+   line-height: 0.4em;
+   
+   font-family: 'HelveticaNeue-Medium', 'HelveticaNeue Medium';
+}
+.checkout {
+   float: right;
+   border: 0;
+   margin-top: 20px;
+   padding: 6px 25px;
+   background-color: #6b6;
+   color: white;
+   font-size: 25px;
+   border-radius: 3px;
+   text-align: center;
+   margin-right: 3em;
+}
+.checkout:hover {
+   background-color: beige;
+}
